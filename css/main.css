@@ -126,9 +126,11 @@ p {
 
 }
 img {
+  width: 100%;
 
 }
 figure {
+  margin: 0;
 
 }
 address {
@@ -138,7 +140,7 @@ address {
 /* --------------- Base Header - Footer Styles ---------- */
 .content-wrapper {
   width: 90%;
-  /*outline: red dotted 1px; */
+  outline: red dotted 1px; 
   margin: 50px 0;
 }
 
@@ -148,7 +150,9 @@ header {
   padding: 15px 0px;
   background-color: #202322;
 }
-
+header figure {
+  width: 60%;
+}
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -157,6 +161,7 @@ header .content-wrapper {
   margin: 0px;
 
 }
+
 
 .header-divider {
   width: 100%;
@@ -222,6 +227,8 @@ footer .copyright {
 .hero {
   display: flex;
   justify-content: center;
+  background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
+  background-size: cover;
 
 }
 .hero h1 {
@@ -263,6 +270,8 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
+  background: url('../img/unplugged-retreat-features.jpg') center no-repeat;
+  background-size: cover;
 }
 
 .features h2 {
@@ -466,7 +475,9 @@ input[type=button] {
   header {
     padding: 33px 0px;
   }
-
+  header figure {
+    width: 30%;
+  }
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
@@ -522,7 +533,7 @@ input[type=button] {
 
   }
 
-  .reviews article div {
+  .reviews article div, .reviews figure {
     width: 49%;
   }
   .reviews h2 {
@@ -620,6 +631,8 @@ input[type=button] {
   header {
     padding: 15px 0;
   }
+
+
   p {
     font-size: 1.125em;
     line-height: 1.333;
