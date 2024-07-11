@@ -108,15 +108,17 @@ a {
 
 }
 h2 {
-  font-family: 'Poppins, sans-serif';
+  font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
-h3, h4 {
+h3, 
+h4 {
   font-family:'Poppins', sans-serif;
   font-size: 1.125em;
   font-weight: 500;
-  padding: 20px 0;
+  margin: 20px 0; 
 
 }
 p {
@@ -216,7 +218,7 @@ footer .social-icons p {
   background-color: #527158;
   border-radius: 50%;
   width: 40px;
-  height: 45px;
+  height: 43px;
 
 }
 footer .social-icons p i {
@@ -236,6 +238,7 @@ footer .copyright {
   justify-content: center;
   background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
   background-size: cover;
+  min-height: 500px;
 
 }
 .hero h1 {
@@ -264,7 +267,7 @@ input[type=text] {
 input[type=button] {
   width: 100%;
   padding: 20px 0;
-  margin-top: 20px 0;
+  margin-top: 20px;
   background-color: #2a423a;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -358,7 +361,7 @@ input[type=button] {
     position: absolute;
     top: 0;
     left: 0;
-  }
+}
 .faq {
   display: flex;
   justify-content: center;
@@ -385,6 +388,7 @@ input[type=button] {
 }
 .faq h2 {
   line-height: 1em;
+  margin-bottom: 40px;
 }
 
 
@@ -479,10 +483,6 @@ input[type=button] {
 @media only screen and (min-width: 768px) {
 
   /* Tablet Styles */
-  h1 {
-    font-size: 48px;
-    line-height: 1em;
-  }
   h2 {
     font-size: 2.25em;
     line-height: 1.33em;
@@ -524,7 +524,15 @@ input[type=button] {
   header figure {
     width: 30;
   }
+  .hero {
+    min-height: 600px;
 
+  }
+  .hero h1 {
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0;
+  }
   aside .content-wrapper {
     margin: 50px 0px;
     display: flex;
@@ -548,6 +556,9 @@ input[type=button] {
   .features .features-item-info {
     width: 50%;
   }
+  .features i {
+    margin-bottom: 30px;
+  }
   .features h2 {
     margin-bottom: 20px;
   }
@@ -558,7 +569,7 @@ input[type=button] {
 
   }
 
-  .reviews article div, .reviews figure {
+  .reviews article div, .reviews article figure {
     width: 49%;
   }
   .reviews h2 {
@@ -593,8 +604,10 @@ input[type=button] {
     line-height: 1.285em;
   }
   footer .social-icons {
-    justify-content: space-around;
+    justify-content: space-between;
     width: 12.5em;
+
+    
   }
   footer .copyright {
     width: 100%;
@@ -648,7 +661,7 @@ input[type=button] {
     width: 100%;
   } 
   .faq h4, .faq p {
-    font-size: 14px;
+    font-size: .875em;
     line-height: 1.125em;
 
   }
@@ -658,9 +671,6 @@ input[type=button] {
 @media only screen and (min-width: 1200px) {
 
   /* Desktop styles here */
-  h1 {
-    font-size: 60px;
-  }
   h2 {
     font-size: 2.25em;
   }
@@ -692,12 +702,14 @@ input[type=button] {
     justify-content: space-around;
   }
 
-  aside .content-wrapper .for-description,
+  aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 30%;
   }
   
-
+  .form-description p {
+  font-size: 1.125em;
+  }
   /* Features */
   .features h2 {
     width: 90%;
@@ -728,6 +740,9 @@ input[type=button] {
   }
   .footer-contact-info {
     font-size: 1.875em;
+  }
+  .map figure {
+    padding-bottom: 37.5%;
   }
   /* ==============================================
   FAQ PAGE
