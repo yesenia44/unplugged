@@ -142,7 +142,7 @@ address {
 /* --------------- Base Header - Footer Styles ---------- */
 .content-wrapper {
   width: 90%;
-  outline: red dotted 1px; 
+  /*outline: red dotted 1px; */
   margin: 50px 0;
 }
 
@@ -384,7 +384,7 @@ input[type=button] {
 
 }
 .faq-content h4 {
-  line-height: 1.33em;
+  line-height: 1.333em;
 }
 .faq h2 {
   line-height: 1em;
@@ -540,7 +540,7 @@ input[type=button] {
     align-content: flex-start;
   }
 
-  aside .content-wrapper .for-description,
+  aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 40%;
     margin: 0;
